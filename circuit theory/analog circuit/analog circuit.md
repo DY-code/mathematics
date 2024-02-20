@@ -1,0 +1,1250 @@
+### 作业
+
+#### 2 运算放大器
+
+- 2.3.1
+- 2.4.5
+- 2.4.11
+
+#### 4 场效应三极管及其放大电路
+
+- 4.3.5
+- 4.4.1
+- 4.4.3
+- 4.5.4
+
+#### 7 差分放大电路
+
+- 7.2.1
+- 7.2.5
+- 7.2.6
+
+#### 8 反馈放大电路
+
+- 8.4.3
+- 8.4.5
+
+#### 9 功率放大电路
+
+- 9.3.1
+- 9.4.3
+
+#### 10 信号处理与信号产生电路
+
+- 10.6.5
+- 10.8.9
+
+#### 11 直流稳压电源
+
+- 11.1.1
+- 11.2.3
+
+# 考点梳理
+
+## 二极管
+
+- 画出电路输出波形
+
+![image-20221204204114766](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204204114766.png)
+
+## 运算放大器
+
+- 求电路的电压放大倍数
+
+![image-20221204204319463](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204204319463.png)
+
+## MOS管 
+
+![image-20221204204634504](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204204634504.png)
+
+- 画出电路的直流和交流通路
+- 计算电路的静态工作点：$V_{GSQ}, \ V_{DSQ}, \ I_{DQ}$
+
+### 小信号模型分析法
+
+- 画出微变等效电路
+- 求互导$g_m$（FET输入电阻$r_{gs}$默认无穷大）
+- 求小信号电压增益
+- 求放大电路的输入，输出电阻
+
+![image-20221204210812343](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204210812343.png)
+
+![image-20221204210945475](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204210945475.png)
+
+## 三极管
+
+![image-20221204204657453](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204204657453.png)
+
+- 画出电路的直流通路、交流通路、微变等效电路
+- 计算电路的静态工作点
+- 计算电压放大倍数
+- 求电路的输入电阻，输出电阻
+- 三极管的放大状态：发射结正偏，集电结反偏
+
+### 图解分析法
+
+- 计算直流、交流负载线（注意斜率），确定静态工作点（$i_D, v_{DS}$）
+- 求小信号输出电压的最大幅值
+
+### 小信号模型分析法
+
+- 计算BJT输入电阻$r_{be} = r_{bb'} \ (200 \ \Omega) + (1 + \beta)\frac{26 \ (mV)}{I_{EQ} \ (mA)}$
+
+- 画出小信号等效电路
+- 给定输入电压，求输出电压
+- 求电路的电压放大增益
+- 计算电路的输入，输出电阻
+
+![image-20221204214141605](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204214141605.png)
+
+![image-20221204214202282](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204214202282.png)
+
+## 差分放大电路
+
+- 求输出电压、输出电流、电流源处电位$V_S$
+- 求双端输出时电压增益$A_{vd}$
+- 求单端输出时差模电压增益$A_{vd1}$，共模电压增益$A_{vc1}$，共模抑制比$K_{CMR}$
+
+## 反馈放大电路
+
+- 判断反馈极性（正\负反馈）和反馈类型或反馈组态（电压\电流反馈，串联\并联反馈）
+- 计算反馈系数F
+- 用负反馈放大电路增益的一般表达式计算电路[闭环增益]()
+- 定性判断反馈对电路输入、输出电阻的影响（串联\并联负反馈影响输入电阻，电压\电流负反馈影响输出电阻）
+
+### 深度负反馈下的近似计算
+
+- 利用反馈系数（倒数）或“虚短虚断”近似计算电路（闭环）增益
+- 试说明电路的功能：压\流控 + 电压\电流 + 源
+
+## 功率放大电路
+
+- 判断功率放大电路的类型（甲类，乙类，甲乙类）
+- 利用公式计算电路可能达到的[最大不失真输出功率]()
+- 利用公式计算电路的输出功率，管耗，直流电源供给功率
+- 利用公式计算电路的效率 = 输出功率 / 电源供给功率
+
+## 信号处理与信号产生电路
+
+### 一阶滤波电路
+
+- 计算电路的传递函数，判断滤波电路的类型（低通，高通，带通，带阻）
+- 计算电路的$-3dB$截止角频率$w_H$（一般等于 $1 / RC$）
+- 计算带通滤波电路的中心角频率$f_0$ （一般等于 $1 / 2\pi RC$）
+- 计算电路的通带电压增益
+- 求电路的幅频响应和相频响应
+
+### RC正弦振荡电路
+
+- 利用相位平衡条件判断电路能否振荡（RC串并联选频网络）
+- 计算电路的振荡频率
+- 计算电路输出波形的幅值
+
+### LC正弦振荡电路
+
+- 判断电感\电容三点式电路能否振荡
+
+### 电压比较器
+
+- 给定输入电压，计算输出电压（运放+稳压二极管限幅）
+- 给定输入电压信号，画出输出电压波形
+- 计算比较器的门限电压（单门限电压比较器，迟滞比较器）
+- 画出比较器的传输特性（输入电压 - 输出电压）
+
+# 运算放大器
+
+## 基本运放电路
+
+### 同相放大电路
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\同相放大电路.png)
+$$
+A_{\mu f} = \frac{v_o}{v_I} = 1 + \frac{R_f}{R_1}
+$$
+==注==
+
+1. $A_{\mu f}$为正值，输入、输出电压同相
+2. $A_{\mu f}$的值只与外部电路元件参数有关，与运放本身的参数无关
+3. 输入电阻$R_i \rightarrow \infty$，输出电阻$R_o \rightarrow 0,(R_o = R_1 + R_f)$
+
+#### 电压跟随器
+
+对于同相放大电路，若：
+$$
+R_1 \rightarrow \infty
+$$
+则可构成电压跟随器：
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\电压跟随器.png)
+$$
+v_o = v_I
+$$
+
+### 反相放大电路
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\反相放大电路.png)
+$$
+A_{\mu f} = \frac{v_o}{v_I} = -\frac{R_f}{R_1}
+$$
+==注==
+
+1. $A_{\mu f}$小于零，输出与输入反相
+2. 为提高精度，运放两相所接电阻应尽可能一致，一般取$R_2 = R_1 // R_f$ 
+3. 电压并联负反馈，输入、输出电阻低，$r_i = R_1$，共模输入电压低 
+
+## 运算电路
+
+### 加法电路
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\加法电路.png)
+$$
+v_o = -(\frac{R_f}{R_1}v_{s1} + \frac{R_f}{R_2}v_{s2})
+$$
+输出端接反相电路可以得到：
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\加法电路搭配反相电路.png)
+$$
+v_o = v_{s1} + v_{s2}
+$$
+
+### 减法电路
+
+#### 利用反相信号求和实现减法运算
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\反相信号构成减法电路.png)
+$$
+v_o = \frac{R_{f2}}{R_2}\frac{R_{f1}}{R_1}v_{s1} - \frac{R_{f2}}{R_2}v_{s2}
+$$
+
+$$
+当R_{f1} = R_1, R_{f2} = R_2 时，有：\\
+v_o = v_{s1} - v_{s2}
+$$
+
+#### 差分式电路实现减法运算
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\差分式电路实现减法运算.png)
+$$
+v_o = (1 + \frac{R_f}{R_1})\frac{R_3}{R_2 + R_3}v_{s2} - \frac{R_f}{R_1}v_{s1}
+$$
+
+$$
+当\frac{R_f}{R_1} = \frac{R_3}{R_2}，则有：\\
+vo = \frac{R_f}{R_1}(v_{s2} - v_{s1})\\
+若继续有：R_f = R_1，则：\\
+v_o = v_{s2} - v_{s1}
+$$
+
+### 加减法运算电路
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\加减法运算电路.png)
+$$
+当电阻满足关系：R_1 // R_2 // R_f = R_3 // R_4 // R_5 \\
+则有：u_o = R_f(\frac{u_{i3}}{R_3} + \frac{u_{i4}}{R_4} - \frac{u_{i1}}{R_1} - \frac{u_{i2}}{R_2})
+$$
+
+### 积分电路
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\积分电路.png)
+$$
+v_o = -\frac{1}{RC}\int_{t_0}^t v_sdt \\
+负号表示v_o和v_s相位相反
+$$
+
+### 微分电路
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\微分电路.png)
+$$
+u_o = -RC\frac{du_i}{dt}
+$$
+
+# 场效应三极管
+
+## MOSFET
+
+### 各种场效应管的特性比较
+
+<img src="C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221212142715618.png" alt="image-20221212142715618"  />
+
+==注意== 
+
+- 对增强型，从不导通变为导通的电压$v_{GS}$称为开启电压$V_T$；对耗尽型，从导通变为不导通的电压$v_{GS}$称为夹断电压（截止电压）$V_P$（教材P96）
+
+### N沟道增强型MOSFET
+
+结构：
+
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\N沟道增强型MOSFET结构.png)
+
+其中：
+$$
+L：沟道长度\\
+W：沟道宽度\\
+通常W > L
+$$
+![](C:\Users\Joker\Documents\TyporaFiles\Curriculum\模电\image\N沟道增强型MOSFET.png)
+
+#### 工作原理
+
+##### $V_{GS}$对沟道的控制作用
+
+- 当$V_{GS} \le 0$时
+
+无导电沟道，d、s间加电压时，无电流产生
+
+- 当$0 < V_{GS} < V_{TN}$时
+
+产生电场，但未形成导电沟道（反型层），d、s间加电压后，无电流产生
+
+- 当$V_{GS} > V_{TN}$时
+
+在电场作用下产生导电沟道，d、s间加电压后，将有电流产生，且$V_{GS}$越大，导电沟道越厚
+
+==注== 
+
+- $V_{TN}$称为N沟道增强型MOSFET[开启电压]()
+
+- 必须依靠栅极外加电压才能产生反型层的MOSFET称为[增强型器件]()
+
+#### I-V特性曲线及特性方程
+
+![image-20221212142018565](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221212142018565.png)
+
+- 截止区
+
+当$v_{GS} < V_{TN}$时，导电沟道未形成，$i_D = 0$，为截至工作状态。
+
+- 可变电阻区
+
+在可变电阻区内有：
+$$
+v_{GS} > V_{TN}，且v_{DS} \le (v_{GS} - V_{TN})
+$$
+其I-V特性可近似表示为：
+$$
+i_D = K_n[2(v_{GS} - V_{TN})v_{DS} - v_{DS}^2] \\
+\approx 2K_n(v_{GS} - V_{TN})v_{DS} \\
+K_n为电导常数，单位为mA/V^2
+$$
+
+其中
+$$
+K_n = \frac{K_n'}{2}\frac{W}{L} = \frac{\mu_nC_{ox}}{2}\frac{W}{L} \\
+\mu_n：反型层中电子迁移率 \\
+C_{ox}：栅极（与衬底间）氧化层单位面积电容\\
+K_n' = \mu_nC_{ox}：本征导电因子\\
+$$
+
+
+- 饱和区
+
+在饱和区（包括预夹断点）有：
+$$
+v_{GS} \ge V_{TN}，且v_{DS} \ge (v_{GS} - V_{TN})
+$$
+
+$$
+i_D = K_n(v_{GS} - V_{TN})^2 = K_nV_{TN}^2(\frac{v_{GS}}{V_{TN}} - 1)^2 = I_{DO}(\frac{v_{GS}}{V_{TN}} - 1)^2 \\
+其中，I_{DO} = K_nV_{TN}^2
+$$
+
+==注== 必须让MOSFET工作在饱和区（放大区）才有放大作用
+
+### N沟道耗尽型MOSFET
+
+![image-20221212144842590](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221212144842590.png)
+
+- 饱和区
+
+$$
+i_D = K_n(v_{GS} - V_{PN})^2
+$$
+
+- 可变电阻区
+
+$$
+i_D \approx 2K_n(v_{GS} - V_{PN})v_{DS}
+$$
+
+==注意== 耗尽型MOSFET的电流方程可以用增强型MOSFET的电流方程表示，但此时[必须用$V_{PN}$代替$V_{TN}$]()
+
+### P沟道MOSFET
+
+![image-20221212151008203](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221212151008203.png)
+
+为使管子能正常工作，PMOS管外加的$v_{DS}$必须是负值，开启电压$V_{TP}$也是负值，实际的电流方向为流出漏极，与通常的假定正好相反。
+
+### P沟道增强型MOSFET
+
+![image-20221212150802438](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221212150802438.png)
+
+- P沟道增强型MOS管沟道产生的条件为：
+
+$$
+v_{GS} \le V_{TP}
+$$
+
+- 可变电阻区与饱和区的界限为：
+
+$$
+v_{DS} = v_{GS} - V_{TP}
+$$
+
+- 在可变电阻区内：$v_{GS} \le V_{TP}, \ v_{DS} \ge v_{GS} - V_{TP}$。当电流参考方向为流入漏极时，有：
+
+$$
+i_D = -K_P[2(v_{GS} - V_{TP})v_{DS} - v_{DS}^2]
+$$
+
+- 在饱和区内：$v_{GS} \le V_{TP}, \ v_{DS} \le v_{GS} - V_{TP}$，电流$i_D$为：
+
+$$
+i_D = -K_P(v_{GS} - V_{TP})^2 = -I_{DO}(\frac{v_{GS}}{V_{TP}} - 1)^2 \\
+I_{DO} = K_P V_{TP}^2
+$$
+
+
+
+### MOSFET主要参数
+
+#### 常用参数标记
+
+- $V_T$：开启电压
+- $V_P$：夹断电压
+
+#### 低频互导$g_m$（P100）
+
+在$v_{DS}$等于常数时，漏极电流的微变量和引起这一变化的微变量之比称为互导，即
+$$
+g_m = \frac{\partial i_D}{\partial v_{GS}}\vert_{v_{DS}}
+$$
+互导反映了栅源电压对漏极电流的控制能力，它相当于转移特性上工作点的斜率。
+
+以N沟道增强型MOSFET为例，若没有FET的特性曲线，则可以利用下式近似估算$g_m$：
+$$
+g_m = 2K_n(v_{GS} - V_{TN})
+$$
+
+
+## MOSFET基本共源极放大电路
+
+### 静态工作点的计算（P104）
+
+对于N沟道增强型MOS管电路的直流计算，可以采取以下步骤：
+
+1. 设MOS管工作于饱和区，则有$V_{GSQ} > V_{TN},I_{DQ} > 0,V_{DSQ} > (V_{GSQ} - V_{TN})$
+2. 利用饱和区电流电压关系曲线分析电路
+3. 如果出现$V_{GSQ} < V_{TN}$，则MOS管可能截止，如果$V_{DSQ} < (V_{GSQ} - V_{TN})$，则MOS管可能工作在可变电阻区
+4. 如果初始假设是错误的，则必须作出新的假设，同时重新分析电路
+
+### 动态工作点的计算（P105）
+
+若只分析放大电路的交流参数，一般要画出交流通路（交流电流流通的路径）。画交流通路的原则是：
+
+1. 对交流信号，电路中内阻很小的直流电压源可视为短路，内阻很大的电流源或恒流源可视为开路
+2. 对一定频率范围内的交流信号，容量较大的电容可视为短路
+
+## 图解分析法
+
+![image-20221218093038507](C:\Users\Joker\Desktop\数电实验报告\image-20221218093038507.png)
+
+直流负载线：可确定静态工作点
+
+交流负载线：可确定输出电压的最大不失真幅度
+
+## 小信号模型分析法
+
+## 共漏极和共栅极放大电路
+
+## 多级放大
+
+# 双极结型三极管（BJT）
+
+## BJT
+
+### BJT的结构
+
+![image-20221120201923118](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221120201923118.png)
+
+#### BJT实现放大作用的外部条件
+
+![image-20221210224425038](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221210224425038.png)
+
+#### BJT的电流分配关系
+
+![image-20221210224833944](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221210224833944.png)
+
+### BJT的I-V特性曲线
+
+
+
+#### 输入特性曲线
+
+![image-20221204200608177](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204200608177.png)
+
+![image-20221204200632486](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204200632486.png)
+
+#### 输出特性曲线
+
+![image-20221204200806938](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204200806938.png)
+
+##### 输出特性曲线的三个区域
+
+- 放大区：发射结正偏电压大于开启电压，集电结反偏
+- 饱和区：发射结和集电结均处于正向偏置的区域
+- 截止区：集电结反向偏置，发射结上偏置电压小于PN结的开启电压
+
+==注意== 
+
+- 当BJT处于临界饱和状态时，可认为[集电结压降$v_{BC}$恰好为0，发射结压降为$v_{BE} = v_{CE} = 0.7V$]()
+- 当BJT工作在饱和区时，一般有饱和压降$v_{CE} < 0.7V$（硅管），此时通常可将其忽略
+- 当BJT处于截止区时，可近似认为$I_C \approx 0$
+
+### BJT的主要参数
+
+#### 电流放大系数
+
+![image-20221204192810682](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221204192810682.png)
+
+![image-20221211170512372](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221211170512372.png)
+
+==注意==
+
+- $\overline{\beta},\ \beta$之间的差异很小可以不加区分
+
+- $\alpha, \beta$之间的关系可表示为：
+
+$$
+\alpha = \frac{\beta}{\beta + 1}
+$$
+
+#### 临界饱和电流
+
+- $I_{BS}$：基极临界饱和电流
+- $I_{CS}$：发射极临界饱和电流
+
+#### 极限参数
+
+![image-20221211170058204](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221211170058204.png)
+
+## 基本共射极放大电路
+
+### BJT放大电路的失真分析
+
+以NPN管为例：
+
+对于输出电流波形：顶部失真为饱和失真，底部失真为截止失真
+
+对于输出电压（与输出电流反相）波形：顶部失真为截止失真，底部失真为饱和失真
+
+PNP管的情况与此正好相反（电压、电流的极性相反）
+
+## BJT放大电路的分析方法
+
+### 图解分析法
+
+#### 交流负载线
+
+对如图所示电路有：
+
+![image-20221211195220824](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221211195220824.png)
+
+![image-20221211195256583](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221211195256583.png)
+$$
+V_{Cb_2} = V_{CEQ} \\
+v_{CE} = V_{Cb_2} + v_o \\
+v_o = v_{ce} = -i_c(R_c // R_L) = -i_cR_L'
+$$
+于是得到交流负载线：
+$$
+v_{CE} = V_{CEQ} + I_{CQ}R_L' - i_CR_L'
+$$
+图解如下图所示：
+
+![image-20221211200157046](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221211200157046.png)
+
+交流负载线的两个特点：
+
+1. 斜率为：$-\frac{1}{R_L'}$（比直流负载线更陡）
+2. 必通过静态工作点Q
+
+### 小信号模型分析法
+
+![image-20221213170116501](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221213170116501.png)
+
+$r_{be}$的估算公式：
+$$
+r_{be} = r_{bb'} + (1 + \beta)\frac{26(mV)}{I_{EQ}(mA)}
+$$
+其中$r_{bb'}$一般默认为$200 \ \Omega$
+
+## BJT放大电路静态工作点的稳定问题
+
+## 共集电极放大电路和共基极放大电路
+
+## FET和BJT及其基本放大电路性能的比较
+
+## 多级放大电路
+
+# 差分放大电路
+
+## FET差分式放大电路
+
+![image-20221213152844521](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221213152844521.png)
+
+- 共模抑制比：
+
+$$
+K_{CMR} = \vert \frac{A_{vd}}{A_{vc}} \vert
+$$
+
+## BJT差分式放大电路
+
+![image-20221213162230652](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221213162230652.png)
+
+# 反馈放大电路
+
+## 反馈的基本概念与分类
+
+### 反馈的分类
+
+#### 电压反馈与电流反馈
+
+电压反馈与电流反馈由反馈网络在放大电路输出端的取样对象决定
+
+电压反馈：反馈信号$x_f$和输出电压成比例，即$x_f =Fv_o$，电压负反馈能稳定输出电压
+
+电流反馈：反馈信号$x_f$与输出电流成比例，即$x_f = Fi_o$，电流负反馈能稳定输出电流
+
+##### 输出短路法
+
+假设输出电压$v_o = 0$，或令负载电阻$R_L = 0$，然后看反馈信号是否还存在。若反馈信号不存在（即$x_f = 0$），说明反馈信号与输出电压成比例，是电压反馈；若反馈信号还存在（即$x_f \ne 0$），说明反馈信号与输出电流成比例，是电流反馈。
+
+##### 简单的判别方法
+
+从输出端拉出的反馈为电压反馈，不是从输出端拉出的反馈为电流反馈。
+
+==特例==
+
+![image-20221117144921881](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221117144921881.png)
+
+该反馈仍为电压反馈
+
+#### 串联反馈与并联反馈
+
+串联反馈：输入信号与反馈信号加在[不同点]()
+
+并联反馈：输入信号与反馈信号加在[相同点]()
+
+为使负反馈的效果更好，当信号源内阻较小时（可看做电压源），宜采用串联负反馈（输入信号为电压）；当信号源内阻较大时（可看做电流源），宜采用并联负反馈（输入信号为电流）。
+
+#### 正反馈与负反馈
+
+##### 瞬时极性法（串同负、并反负）
+
+假设输入信号在某瞬时的极性为(+)，再根据各类放大电路输出信号与输入信号间的相位关系，逐级标出[电路中各有关点电位的瞬时极性或各有关支路电流的瞬时流向]()，最后看反馈信号是削弱还是增强了净输入信号。若净输入信号被削弱，则为负反馈；反之为正反馈。
+
+#### 直流反馈与交流反馈
+
+直流反馈：存在于直流通路中的反馈，影响放大电流的直流性能。引入直流负反馈的目的是稳定放大电路的静态工作点。
+
+交流反馈：存在于交流通路中的反馈，影响放大电流的交流性能
+
+### 负反馈放大电路的四种组态
+
+- 电压串联负反馈
+- 电压并联负反馈
+- 电流串联负反馈
+- 电流并联负反馈
+
+## 负反馈放大电路增益的一般表达式
+
+$$
+A_f = \frac{A}{1 + AF}
+$$
+
+其中
+$$
+A = \frac{x_o}{x_{id}} \quad (开环增益) \\
+F = \frac{x_f}{x_0} \quad (反馈系数) \\
+x_{id}：净输入
+$$
+
+### 反馈深度
+
+$$
+\vert 1 + AF \vert
+$$
+
+- $\vert 1 + AF \vert > 1, \quad \vert A_f \vert < \vert A \vert$，负反馈
+
+[深度负反馈]()：
+$$
+\vert 1 + AF \vert \gg 1 \quad \Rightarrow \quad A_f = \frac{1}{F}
+$$
+
+- $\vert 1 + AF \vert < 1, \quad \vert A_f \vert > \vert A \vert$，正反馈
+
+[自激振荡]()：
+$$
+\vert 1 + AF \vert = 0 \quad \Rightarrow \quad A_f \rightarrow \infty
+$$
+
+### 负反馈放大电路中各种信号量的含义
+
+![image-20221117154903605](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221117154903605.png)
+
+## 负反馈对放大电路性能的影响
+
+### 提高增益的稳定性
+
+由负反馈放大电路增益的一般表达式可以得到：
+$$
+\frac{dA_f}{A_f} = \frac{1}{1 + AF}\frac{dA}{A}
+$$
+引入负反馈后，闭环增益的相对变化量是开环增益相对变化量的$\frac{1}{1 + AF}$倍，闭环增益的相对稳定度提高。$1 + AF$越大，负反馈越深，闭环增益的稳定性越好。
+
+### 减小非线性失真
+
+负反馈减小非线性失真指的是反馈环内的失真
+
+### 抑制反馈环内噪声（提高信噪比）
+
+负反馈同时降低了噪声输出和信号输出的能量值，而信号输出的能量值可以通过人为加大输入抵消负反馈影响，总的来看噪声减小，信号增加，比值增加
+
+### 对输入输出电阻的影响
+
+#### 对输入电阻的影响
+
+- 串联负反馈
+
+$$
+R_{if} = (1 + AF)R_i
+$$
+
+- 并联负反馈
+
+$$
+R_{if} = \frac{1}{1 + AF}R_i
+$$
+
+#### 对输出电阻的影响
+
+- 电压负反馈（恒压，内阻小）
+
+$$
+R_{of} = \frac{1}{1 + AF}R_o
+$$
+
+- 电流负反馈（恒流，内阻大）
+
+$$
+R_{of} = (1 + AF)R_o
+$$
+
+==注意== 放大器的输出电阻永远不包括负载，即对于上述各式中的A，事实上有：
+$$
+A = A_o \vert_{R_L \rightarrow \infty}
+$$
+
+### 扩展带宽
+
+$$
+BW_f = (1 + AF)BW
+$$
+
+## 深度负反馈条件下的近似计算
+
+深度负反馈条件下，并联反馈虚断，串联反馈虚短。（也可推出同时存在）
+
+# 功率放大电路
+
+### 功率放大器和电压放大器的比较
+
+![image-20221214210542955](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221214210542955.png)
+
+## 功率放大电路的分类
+
+![image-20221129165509342](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221129165509342.png)
+
+### 甲类
+
+一个周期内均导通，导通角为$360^\circ$，静态功耗最大
+
+### 乙类
+
+导通角为$180^\circ$，静态功耗最小
+
+### 甲乙类
+
+导通角在$180^\circ$和$360^\circ$之间
+
+### 丙类
+
+导通角小于$180^\circ$
+
+## 射极输出器-甲类放大的实例
+
+![image-20221214211043041](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221214211043041.png)
+
+特点：电压增益近似为1，电流增益很大，可获得较大的功率增益，输出电阻小，带负载能力强。
+
+## 乙类双电源互补对称功率放大电路
+
+![image-20221129173259648](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221129173259648.png)
+
+==注意== 射极输出，电压放大倍数近似为1
+
+- 最大不失真输出功率$P_{omax}$
+
+$$
+\begin{aligned}
+P_{omax} &= \frac{(\frac{V_{CC} - V_{CES}}{\sqrt{2}})^2}{R_L} \\
+&= \frac{(V_{CC} - V_{CES})^2}{2R_L}
+\end{aligned}
+$$
+
+忽略$V_{CES}$时：
+$$
+P_{omax} \approx \frac{V_{CC}^2}{2R_L}
+$$
+实际输出功率：
+$$
+P_o = V_oI_o = \frac{V_{om}}{\sqrt{2}} \cdot \frac{V_{om}}{\sqrt{2} \cdot R_L} = \frac{V_{om}^2}{2R_L}
+$$
+
+- 管耗$P_T$
+
+单个管子在半个周期内的管耗：
+$$
+P_{T1} = \frac{1}{R_L}(\frac{V_{CC}V_{om}}{\pi} - \frac{V_{om}^2}{4})
+$$
+两管管耗：
+$$
+P_T = P_{T1} + P_{T2} = \frac{2}{R_L}(\frac{V_{CC}V_{om}}{\pi} - \frac{V_{om}^2}{4})
+$$
+
+- 电源供给功率$P_V$
+
+$$
+P_V = P_o + P_T = \frac{2V_{CC}V_{om}}{\pi R_L}
+$$
+
+当$V_{om} \approx V_{CC}$时，有：
+$$
+P_{Vm} = \frac{2}{\pi} \cdot \frac{V_{CC}^2}{R_L}
+$$
+
+- 效率$\eta$
+
+$$
+\eta = \frac{P_o}{P_V} = \frac{\pi}{4} \cdot \frac{V_{om}}{V_{CC}}
+$$
+
+当$V_{om} \approx V_{CC}$时
+$$
+\eta = \frac{\pi}{4} \approx 78.5\%
+$$
+
+### 最大管耗和最大输出功率的关系
+
+经计算可得，当$V_{om} = \frac{2}{\pi}V_{CC} \approx 0.6V_{CC}$时具有最大管耗，此时有：
+$$
+P_{T1m} = \frac{1}{\pi^2} \cdot \frac{V_{CC}^2}{R_L}
+$$
+考虑最大输出功率$P_{om}$的表达式，则每管[产生]()的最大管耗和电路的最大输出功率具有如下关系：
+$$
+P_{T1m} \approx 0.2 P_{om}
+$$
+
+### 功率BJT的选择（教材P403）
+
+要得到最大输出功率，参数需满足如下条件：
+
+1. 每只BJT的最大允许管耗$P_{CM}$必须大于$0.2P_{om}$
+2. 考虑到当$T_{2}$导通时，$-v_{CE2} \approx 0$，此时$v_{CE1}$具有最大值，且等于$2V_{CC}$，因此有$\vert V_{(BR)CEO} \vert > 2V_{CC}$
+3. 通过功率BJT的最大集电极电流为$V_{CC} / R_L$，因此有$I_{CM} \ge V_{CC} / R_L$
+
+## 甲乙类互补对称功率放大电路
+
+甲乙类电路的计算可近似用乙类电路的计算公式来计算。
+
+# 信号处理与信号产生电路
+
+## 滤波电路的分类
+
+- 低通（LPF）
+- 高通（HPF）
+- 带通（BPF）
+- 带阻（BEF）
+- 全通（APF）
+
+## 一阶有源滤波电路
+
+### 低通滤波电路
+
+![image-20221123101221648](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123101221648.png)
+
+传递函数：
+$$
+A(s) = \frac{\dot{U_o}}{\dot{U_i}} = \frac{A_0}{1 + \frac{s}{\omega_c}} \\
+A_0 = 1 + \frac{R_f}{R_1}：通带电压放大倍数 \\
+\omega_c = \frac{1}{RC}：特征角频率 \\
+s = j\omega
+$$
+
+幅频响应为：
+
+$$
+\vert A(j\omega) \vert = \frac{A_0}{\sqrt{1 + (\frac{\omega}{\omega_c})^2}}
+$$
+
+![image-20221123101735324](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123101735324.png)
+
+$-3dB$截止角频率$\omega_H$的计算：当$\omega = \omega_c$时，有
+$$
+20\lg \vert \frac{A(j\omega)}{A_0} \vert = 20\lg\frac{1}{\sqrt{2}} = -3.01
+$$
+则可以认为：$\omega_H = \omega_c$
+
+### 高通滤波电路
+
+![image-20221123142907653](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123142907653.png)
+
+传递函数：
+
+$$
+A(s) = \frac{\dot{U_o}}{\dot{U_i}} = \frac{A_0 \frac{s}{\omega_c}}{1 + \frac{s}{\omega_c}}
+$$
+
+## 高阶有源滤波电路
+
+### 二阶有源低通滤波电路
+
+![image-20221123101931397](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123101931397.png)
+
+说明：电容$C_1$连接到输出端构成正反馈，以抵消电路在转折点的过快衰减，改善转角频率特性
+
+传递函数：
+$$
+A(s) = \frac{A_{VF}}{1 + (3 - A_{VF})sCR + (sCR)^2} = 
+\frac{A_0\omega_c^2}{s^2 + \frac{\omega_c}{Q}s + \omega_c^2} \\
+A_0 = A_{VF} = 1 + \frac{R_f}{R_1}：通带增益 \\
+Q = \frac{1}{3 - A_{VF}}：等效品质因数 \\
+\omega_c = \frac{1}{RC}：特征角频率
+$$
+
+==说明== 当$3 - A_{VF} > 0$，即$A_{VF} < 3$时，滤波电路才能稳定工作
+
+幅频响应：
+
+$$
+20\lg \vert \frac{A(j\omega)}{A_0} \vert = 20\lg \frac{1}{\sqrt{[1 - (\frac{\omega}{\omega_c})^2]^2 + (\frac{\omega}{\omega_cQ})^2}}
+$$
+
+幅频响应曲线：
+
+![image-20221123103215038](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123103215038.png)
+
+$Q = 0.707$对应的幅频响应曲线更接近理想特性
+
+### 二阶有源高通滤波电路
+
+![image-20221123103300659](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123103300659.png)
+
+传递函数：
+
+$$
+A(s) = \frac{A_0 s^2}{s^2 + \frac{\omega_c}{Q}s + \omega_c^2} 
+$$
+
+幅频响应：
+
+$$
+20\lg \vert \frac{A(j\omega)}{A_0} \vert = 20\lg \frac{1}{\sqrt{[(\frac{\omega_c}{\omega})^2 - 1]^2 + (\frac{\omega_c}{\omega Q})^2}}
+$$
+
+### 有源带通滤波电路
+
+电路一般组成：
+
+![image-20221123103906779](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123103906779.png)
+
+![image-20221123103934014](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123103934014.png)
+
+传递函数：
+
+$$
+A(s) = \frac{A_0 \frac{s}{Q\omega_0}}{1 + \frac{s}{Q\omega_0} + (\frac{s}{\omega_0})^2} \\
+\omega_0 = \frac{1}{RC}
+$$
+
+$\omega_0$既是特征角频率，也是[带通滤波电路的中心角频率]()
+
+为方便记忆，二阶有源带通滤波电路的传递函数还可以写为如下形式：
+$$
+A(s) = \frac{A_0 \frac{\omega_0}{Q} s}{s^2 + \frac{\omega_0}{Q} s + \omega_0^2}
+$$
+
+可以知道，假设传递函数的分子形式为：$A_0 \cdot X$，则有：
+
+- $X = s^2 \quad \Rightarrow \quad$高通
+- $X = \frac{\omega_0}{Q}s \quad \Rightarrow \quad$带通
+- $X = \omega_0^2 \quad \Rightarrow \quad$低通
+- $X = s^2 + \omega_0^2 \quad \Rightarrow \quad$带阻
+
+幅频响应曲线：
+
+![image-20221123104332204](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123104332204.png)
+
+带通滤波电路的通带宽度：
+$$
+BW = \frac{\omega_0}{2\pi Q} = \frac{f_0}{Q}
+$$
+
+### 二阶有源带阻滤波电路
+
+![image-20221123104410416](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123104410416.png)
+
+#### 双T带阻滤波电路
+
+![image-20221123104456632](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123104456632.png)
+
+传递函数：
+$$
+A(s) = \frac{A_0 (s^2 + \omega_0^2)}{s^2 + \frac{\omega_0}{Q}s + \omega_0^2}
+$$
+
+幅频特性：
+
+![image-20221123104514361](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123104514361.png)
+
+## 正弦波振荡电路的振荡条件
+
+![image-20221123104659423](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123104659423.png)
+
+振荡（维持）条件：
+$$
+A(\omega) \cdot F(\omega) = 1 \quad 振幅平衡条件\\
+\phi_a(\omega) + \phi_f(\omega) = 2n\pi \quad 相位平衡条件
+$$
+
+起振条件：
+$$
+\begin{cases}
+A(\omega) \cdot F(\omega) > 1 \ （一般认为A > 3） \\
+\\
+\phi_a(\omega) + \phi_f(\omega) = 2n\pi
+\end{cases}
+$$
+
+### 振荡电路基本组成部分
+
+![image-20221123105049644](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123105049644.png)
+
+## RC正弦波振荡电路
+
+### RC桥式振荡电路
+
+#### 电路组成
+
+![image-20221123105215701](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123105215701.png)
+
+#### 选频特性
+
+反馈系数：
+$$
+\dot{F}_V = \frac{1}{3 + j(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega})}
+$$
+
+幅频响应：
+
+$$
+F_V = \frac{1}{\sqrt{3^2 + (\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega})^2}}
+$$
+
+相频响应：
+
+$$
+\phi_f = -\arctan \frac{(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega})}{3}
+$$
+
+当$\omega = \omega_0 = \frac{1}{RC}$或$f = f_0 = \frac{1}{2\pi RC}$时，幅频响应有最大值：
+
+$$
+F_{Vmax} = \frac{1}{3}
+$$
+
+相频响应：
+
+$$
+\phi_f = 0
+$$
+
+![image-20221123160352290](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123160352290.png)
+
+#### 工作原理
+
+<img src="C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123161036941.png" alt="image-20221123161036941"  />
+
+起振时，$A_v = 1 + \frac{R_F}{R_1}$需略大于3，达到平衡状态时，$A_v = 3, F_v = \frac{1}{3} \quad (\omega = \omega_0 = \frac{1}{RC})$
+
+==注意== 此时的$F_v$表示正反馈
+
+#### 移相式正弦波振荡电路
+
+![image-20221123161544193](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123161544193.png)
+
+## LC正弦波振荡电路
+
+### LC并联选频网络
+
+#### 并联谐振回路
+
+![image-20221123163049039](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123163049039.png)
+
+等效阻抗：
+$$
+Z = \frac{L/C}{R + j(\omega L - \frac{1}{\omega C})} \\
+（一般有R \ll \omega L）
+$$
+电路谐振条件：
+$$
+\omega = \omega_0 = \frac{1}{\sqrt{LC}} \\
+\omega_0：谐振频率
+$$
+谐振时，等效阻抗最大：
+$$
+Z_0 = \frac{L}{RC} = Q\omega_0 L = \frac{Q}{\omega_0 C} \\
+Q = \frac{\omega_0 L}{R} = \frac{1}{\omega_0RC} = \frac{1}{R}\sqrt{\frac{L}{C}}（品质因数）
+$$
+![image-20221123164652745](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123164652745.png)
+
+### 变压器反馈式LC振荡电路
+
+### 三点式LC振荡电路
+
+![image-20221123164827227](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123164827227.png)
+
+### 石英晶体振荡电路
+
+![image-20221123213754696](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123213754696.png)
+
+- 串联谐振：
+
+$$
+f_s = \frac{1}{2\pi \sqrt{LC}}
+$$
+
+此时晶体等效阻抗为纯阻性
+
+- 并联谐振：
+
+$$
+f_p = \frac{1}{2\pi \sqrt{LC}}\sqrt{1 + \frac{C}{C_0}} = f_s\sqrt{1 + \frac{C}{C_0}}
+$$
+
+由于$C \ll C_0$，所以$f_s, f_p$很接近
+
+![image-20221123214316090](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123214316090.png)
+
+#### 关于品质因数Q
+
+Q值越高，选频特性越好，频率越稳定。
+
+- LC振荡电路：Q的量级为$100$
+- 石英晶体振荡电路：Q大致在$10000 \sim 500000$范围内
+
+## 非正弦信号产生电路
+
+### ==电压比较器（大题）==
+
+关于电压比较器的几点结论：
+
+1. 用于电压比较器的运放，通常工作在开环或正反馈状态和非线性区，其输出电压只有高电平$V_{OH}$和低电平$V_{OL}$两种情况
+2. 一般用电压传输特性来描述输出电压和输入电压的函数关系
+3. 电压传输特性的三个要素是输出电压的高、低电平，门限电压和输出电压的跳变方向。令$v_P = v_N$，所求出的$v_I$就是门限电压；$v_I$等于门限电压时，输出电压的跳变方向取决于输入电压作用于同相输入端还是反向输入端
+
+#### 单门限电压比较器
+
+特点：
+
+- [开环，虚短不成立]()
+- 增益$A_0 > 10^5$
+- $-V_{EE} \le v_o \le +V_{CC}$
+
+##### 过零比较器
+
+![image-20221123105521146](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123105521146.png)
+
+- $v_I > 0$时，$v_{Omax} = +V_{CC}$
+- $v_I < 0$时，$v_{Omax} = -V_{EE}$
+
+电压传输特性：
+
+![image-20221123105909278](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123105909278.png)
+
+##### 门限不为零的比较器
+
+![image-20221123110024920](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123110024920.png)
+
+电压传输特性：
+
+![image-20221123110048361](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123110048361.png)
+
+另一种形式的门限非零比较器：
+
+![image-20221123215531788](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123215531788.png)
+
+由叠加原理得：
+$$
+v_P = \frac{R_2}{R_1 + R_2}V_{REF} + \frac{R_1}{R_1 + R_2}v_I
+$$
+输出电压发生跳变时，$v_P = v_N = 0$，则有门限电压：
+$$
+V_T = -\frac{R_2}{R_1}V_{REF}
+$$
+其电压传输特性如下：
+
+![image-20221123215928876](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123215928876.png)
+
+==注意== 当输入加到运放同相端时，电压传输特性类似上图的形式（突变处曲线斜率为正）；反之，当输入加到运放反相端时，电压传输特性与上图相反
+
+##### 稳压二极管的工作原理
+
+如图是稳压二极管伏安特性曲线图，利用二极管的反向工作特性。当反向电压达到稳定值$U_Z$时，稳压二极管两端电压基本保持不变。
+
+![image-20221126105416401](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221126105416401.png)
+
+稳压管的符号（红色标出的为常用符号）：![img](https://pic1.zhimg.com/v2-787894c5695216a144950202e899a868_r.jpg)
+
+#### 迟滞比较器（双门限比较器，施密特比较器）
+
+![image-20221123110140021](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123110140021.png)
+
+传输特性：
+
+![image-20221123110237170](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123110237170.png)
+
+![image-20221126110435451](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221126110435451.png)
+
+工作特点：输入电压由小变大时，输出电压在上门限电压发生翻转；输入电压由大变小时，输出电压在下门限电压发生翻转
+
+### 方波产生电路
+
+![image-20221123110638853](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123110638853.png)
+
+==注意== 稳压管和运放输出端之间要接一个电阻
+
+### 锯齿波产生电路
+
+![image-20221123110954275](C:\Users\Joker\AppData\Roaming\Typora\typora-user-images\image-20221123110954275.png)
+
+
+
+
+
+
+
+
+
