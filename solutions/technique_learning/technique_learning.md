@@ -1,16 +1,37 @@
 - ROS
 
-
-
 学习网站
 
 - [程序员鱼皮](https://space.bilibili.com/12890453)
 
+### tools
 
+#### marktext
+
+官网：https://www.marktext.cc/
+
+github：https://github.com/marktext/marktext?tab=readme-ov-file
 
 ### github
 
 - [get started with github](https://docs.github.com/zh/get-started/start-your-journey/hello-world)
+
+- personal access token for git on command line: [Managing your personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+
+a temporary token: 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
+
+
+
+- [提交文件到github的两种方法](https://blog.csdn.net/u013553529/article/details/59144904#:~:text=方法一：本地目录执行 git init，不执行 git clone 1 执行 git,） 3 执行 git push origin main 将本地工程提交到github)
+
+###### github加速：fast github
+
+- [『FastGithub』一款.Net开源的稳定可靠Github加速神器，轻松解决GitHub访问难题](https://blog.csdn.net/qq_34202873/article/details/132543478)
+- FastGithub for ubuntu chrome: [安装FastGithub从而实现加速github的步骤(Ubuntu)](https://blog.csdn.net/Lambert0320/article/details/132204181)
+
+#### git
+
+官网：https://git-scm.com/
 
 ### Linux
 
@@ -28,6 +49,18 @@
 
 - 【译】一个简单的 make & makefile 教程 - JustSong的文章 - 知乎https://zhuanlan.zhihu.com/p/92010728
 - 【[教程]Makefile的写法】 https://www.bilibili.com/video/BV1Mx411m7fm/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+
+### markdown
+
+- [Markdown输入公式、符号等语法汇总](https://blog.csdn.net/weixin_46098577/article/details/118308281?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164698148016780261973453%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=164698148016780261973453&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-11-118308281.pc_search_result_cache&utm_term=%E4%B8%8D%E7%AD%89%E4%BA%8E%E2%89%A0%E6%80%8E%E4%B9%88%E6%89%93&spm=1018.2226.3001.4187)
+
+
+
+- 数学公式块中加粗字母，且不改变字体，示例：
+
+$$
+\pmb{x}
+$$
 
 # LaTeX
 
@@ -169,6 +202,16 @@ issn = {1007-2276},
 
 # python
 
+#### pip
+
+常用命令：
+
+- `pip show`：展示已安装包的信息，如：
+
+```
+pip show scipy
+```
+
 #### anaconda
 
 - [conda常用命令汇总](https://blog.csdn.net/raelum/article/details/125109819?ops_request_misc=%7B%22request%5Fid%22%3A%22169638859316800180635510%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=169638859316800180635510&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-125109819-null-null.142%5Ev94%5Einsert_down28v1&utm_term=Conda%E6%8C%87%E4%BB%A4&spm=1018.2226.3001.4187)
@@ -195,11 +238,62 @@ jupyter notebook
 
 - [帮助文档](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html)
 
+#### jupyter notebook
+
+###### 魔法函数
+
+```
+%lsmagic  # 列出所有魔法函数
+%matplotlib inline  # 绘图内嵌
+```
+
+参考：[Jupyter中的魔法函数](https://zhuanlan.zhihu.com/p/142942524)
+
 ### python库
+
+#### pandas
+
+文档：https://pandas.pydata.org/pandas-docs/stable/reference/frame.html
+
+
+
+- dataframe的数据类型转换
+
+```python
+df = df.astype('float32')
+```
+
+参考：[pandas的dataframe如何更改数据类型？](https://blog.csdn.net/Python_Ai_Road/article/details/81158376)
 
 #### matplotlib
 
 - [API Reference](https://matplotlib.org/stable/api/index.html)
+
+- `matplotlib.pyplot`: https://matplotlib.org/stable/api/pyplot_summary.html
+
+
+
+- 在x=0, y=0处画线形成十字
+
+```python
+# 绘制水平线
+plt.axhline(0, color='black', linestyle='--')
+# 绘制垂直线
+plt.axvline(0, color='black', linestyle='--')
+```
+
+参考：[python 在x=0,y=0处画线形成十字](https://blog.csdn.net/baishuiniyaonulia/article/details/121099621)
+
+- 指定两坐标轴的比例相同
+
+```python
+plt.axis("equal")
+```
+
+参考：
+
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axis.html
+- [【matplotlib】可视化解决方案——如何正确设置轴长度和范围](https://blog.csdn.net/pcx171/article/details/130406896)
 
 #### scipy
 
@@ -213,7 +307,7 @@ jupyter notebook
 
 
 
-```
+```python
 np.multiply() # 各元素分别相乘
 ```
 
@@ -233,6 +327,17 @@ print(A.I)
 ```
 
 参考：[Numpy 中的矩阵求逆](https://blog.csdn.net/xienan_ds_zj/article/details/86738316)
+
+###### numpy计算方差：`ndarray.var()`
+
+`ndarray.var()`的计算公式（无参数，ddof=0）：
+$$
+D(X) = \frac{1}{n}\sum_{i=1}^n (x_i - \overline{x})^2
+$$
+`ndarray.var(ddof=1)`的计算公式：
+$$
+D(X) = \frac{1}{n-1}\sum_{i=1}^n (x_i - \overline{x})^2
+$$
 
 ###### numpy计算协方差：`numpy.cov()`的计算过程细节
 
@@ -274,11 +379,22 @@ $$
 
 #### os
 
-- os.path.join(): 将多个路径拼接起来
+文档：https://docs.python.org/3/library/os.html
+
+- `os.path.join()`: 将多个路径拼接起来
 
 参考：https://www.geeksforgeeks.org/python-os-path-join-method/
 
 ## 语法
+
+### 魔法函数
+
+- `__name__`：当前模块（文件）的名称，当该模块被直接运行时，`__name == __main__`
+
+参考：if __name__ == '__main__' 如何正确理解? - 初识CV的回答 - 知乎
+https://www.zhihu.com/question/49136398/answer/1654722335
+
+### 字符串
 
 - formatted string literals（格式化字符串文字）: `f"..."`
 
@@ -298,17 +414,29 @@ $$
 
 
 
-###### python类的一些特殊函数
+##### python类的一些内置函数
 
-- 索引符号重载
+###### 类对象的调用：`__call__`
+
+示例：
+
+```python
+class Person:
+    def __call__(self, name):
+        print("__call__: " + name)
+        
+person = Person()
+person("Fred")
+# 输出结果：__call__: Fred
+```
+
+###### 索引符号重载
 
 ```python 
 object[key] <==> object.__getitem__(key)
 ```
 
-
-
-
+与之相似的还有`__setitem__`、`__delitem__`，详细用法参考：[How to implement __getitem__, __setitem__, and __delitem__ in Python](https://geekpython.in/implement-getitem-setitem-and-delitem-in-python)
 
 ## 其他
 
@@ -320,19 +448,30 @@ assert(0) # 参数为0时触发断言
 
 # 深度学习
 
+吴恩达：
+
 - 【[双语字幕]吴恩达深度学习deeplearning.ai】 https://www.bilibili.com/video/BV1FT4y1E74V/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
 - 【(强推|双字)2022吴恩达机器学习Deeplearning.ai课程】 https://www.bilibili.com/video/BV1Pa411X76s/?p=150&share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
 配套资料：
 
-- https://github.com/robbertliu/deeplearning.ai-andrewNG
-- [【目录】【中文】【deplearning.ai】【吴恩达课后作业目录】](https://blog.csdn.net/u013733326/article/details/79827273)
-- [Deeplearning.ai深度学习教程中文笔记](https://github.com/fengdu78/deeplearning_ai_books)
+1. https://github.com/robbertliu/deeplearning.ai-andrewNG
+2. [【目录】【中文】【deplearning.ai】【吴恩达课后作业目录】](https://blog.csdn.net/u013733326/article/details/79827273)
+3. [Deeplearning.ai深度学习教程中文笔记](https://github.com/fengdu78/deeplearning_ai_books)
 
 
+
+李沐：
+
+- [【完结】动手学深度学习 PyTorch版](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)
 
 - 【李沐】动手学深度学习】 https://www.bilibili.com/video/BV18h411r7Z7/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+
+源代码：
+
+- 中文版：https://github.com/d2l-ai/d2l-zh?tab=readme-ov-file
+- 英文版：https://github.com/d2l-ai/d2l-en
 
 
 
@@ -346,6 +485,8 @@ assert(0) # 参数为0时触发断言
 ## pytorch
 
 官网：https://pytorch.org/get-started/locally/
+
+PyTorch官方文档：https://pytorch.org/docs/stable/index.html
 
  
 
@@ -373,6 +514,81 @@ assert(0) # 参数为0时触发断言
 
 南京大学镜像：https://mirror.nju.edu.cn/pub/anaconda/cloud/pytorch/win-64/
 
+#### torchvision数据集使用
+
+示例：
+
+```python
+import torchvision
+from torch.utils.tensorboard import SummaryWriter
+
+dataset_transform = torchvision.transforms.Compose([
+    torchvision.transforms.ToTensor()
+])
+
+# 下载数据集到指定的路径 从训练集中创建数据集
+# 将图片转换为tensor类型
+train_set = torchvision.datasets.CIFAR10(root="./dataset", train=True, transform=dataset_transform, download=True)
+test_set = torchvision.datasets.CIFAR10(root="./dataset", train=False, transform=dataset_transform,  download=True)
+
+# 使用tensorboard展示前10张图片
+writer = SummaryWriter("p10")
+for i in range(10):
+    img, target = test_set[i]
+    writer.add_image("test_set", img, i)
+
+writer.close()
+```
+
+#### Transforms
+
+- 归一化`Normalize()`
+
+计算公式：
+
+```python
+input[channel] = (input[channel] - mean[channel]) / std[channel]
+```
+
+- `Resize()`
+
+- `Compose()`：把多个transforms步骤整合到一起
+- `RandomCrop()`：随机裁剪
+
+#### TensorBoard 数据可视化工具
+
+- 本地启动TensorBoard：在命令行运行如下命令，可启动TensorBoard，其中dir_name为数据所在目录，默认为`logs`
+
+```
+tensorboard --logdir=<dir_name>
+```
+
+- 在jupyter notebook中启动TensorBoard，可使用如下代码：
+
+```
+%load_ext tensorboard  # 加载TensorBoard并允许将其用于可视化
+%tensorboard --logdir logs  # 启动TensorBoard
+```
+
+在pytorch中的调用示例：
+
+```python
+from torch.utils.tensorboard import SummaryWriter
+import random
+import time
+
+writer = SummaryWriter("logs")  # 创建一个log文件
+for i in range(100):
+    # add_scalar()添加数据，add_image()添加图片
+    writer.add_scalar(tag="accuracy", # 可以暂时理解为图像的名字
+                      scalar_value=i*random.uniform(0.8, 1),  # 纵坐标的值
+                      global_step=i  # 当前是第几次迭代，可以理解为横坐标的值
+                      )
+    time.sleep(2 * random.uniform(0.5, 1.5))  # 模拟1~3秒完成一次迭代并计算准确率
+
+writer.close()  # 训练结束后结束log写入
+```
+
 ### pytorch notes
 
 实用的两个工具（函数）：
@@ -391,7 +607,7 @@ assert(0) # 参数为0时触发断言
 
 ##### 矩阵求导
 
-列向量对行向量求导：
+列向量对行向量求导（一般使用分子布局）：
 $$
 \begin{aligned}
 \frac{\partial y_{m \times 1}}{\partial x_{1 \times n}} &= 
@@ -410,6 +626,18 @@ $$
 \end{aligned}_{m \times n}
 $$
 ==注== 当分子为行向量时，默认作为列向量处理
+
+常用矩阵求导公式：
+$$
+\frac{\partial (\pmb{x}^T\pmb{a})}{\partial \pmb{x}} = \frac{\partial (\pmb{a}^T\pmb{x})}{\partial \pmb{x}} = \pmb{a}
+$$
+参考：
+
+- 矩阵求导的本质与分子布局、分母布局的本质（矩阵求导——本质篇） - Iterator的文章 - 知乎
+  https://zhuanlan.zhihu.com/p/263777564
+
+- 矩阵求导公式的数学推导（矩阵求导——基础篇） - Iterator的文章 - 知乎
+  https://zhuanlan.zhihu.com/p/273729929
 
 #### 概念
 
@@ -909,6 +1137,20 @@ $$
 
 参考：[Dataset之COCO数据集：COCO数据集的简介、下载、使用方法之详细攻略](https://blog.csdn.net/qq_41185868/article/details/82939959)
 
+### face_recognition
+
+dlib的github官网：https://github.com/davisking/dlib
+
+似乎找不到ubuntu下dlib的.whl文件，可以尝试手动编译安装
+
+- [ubuntu20.04安装Dlib方法](https://zhuanlan.zhihu.com/p/449942621)
+
+
+
+- [[已解决]face_recognition库安装，dlib库安装](https://blog.csdn.net/weixin_53236070/article/details/124306424)
+
+## opencv
+
 ### opencv python
 
 文档
@@ -928,23 +1170,11 @@ $$
 pip install opencv_python-4.5.4.60-cp39-cp39-win_amd64.whl
 ```
 
-### face_recognition
 
-dlib的github官网：https://github.com/davisking/dlib
-
-似乎找不到ubuntu下dlib的.whl文件，可以尝试手动编译安装
-
-- [ubuntu20.04安装Dlib方法](https://zhuanlan.zhihu.com/p/449942621)
-
-
-
-- [[已解决]face_recognition库安装，dlib库安装](https://blog.csdn.net/weixin_53236070/article/details/124306424)
 
 ## yolo
 
 作者的yolo网页：https://pjreddie.com/darknet/yolov1/
-
-
 
 - [YOLO系列算法精讲：从yolov1至yolov8的进阶之路（2万字超全整理）](https://blog.csdn.net/wjinjie/article/details/107509243?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170901435516800211595559%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170901435516800211595559&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-107509243-null-null.142^v99^pc_search_result_base7&utm_term=yolo&spm=1018.2226.3001.4187)
 
@@ -960,13 +1190,13 @@ dlib的github官网：https://github.com/davisking/dlib
 
 yolov5 github: https://github.com/ultralytics/yolov5?tab=readme-ov-file
 
-#### 树莓派部署yolov5
-
 ### yolov7
 
 yolov7 github: https://github.com/WongKinYiu/yolov7
 
-## ResNet
+# control & 气垫船 
+
+
 
 
 
