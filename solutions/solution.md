@@ -18,13 +18,20 @@
 
 ##### 王德峰
 
-- 【王德峰教授讲坛经的与禅宗的智慧（完整版）】 https://www.bilibili.com/video/BV1XK4y1X7FF/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
-
 - 【复旦大学】哲学课堂（阳明|笛卡尔|坛经|马哲|合50讲）王德峰】 https://www.bilibili.com/video/BV1Mg411g7C8/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
-- 【讲座】中国古代命理学 （王德峰 11讲）】 https://www.bilibili.com/video/BV1eh411h7xH/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+
+
+
+- 【王德峰教授讲坛经的与禅宗的智慧（完整版）】 https://www.bilibili.com/video/BV1XK4y1X7FF/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+- 【国学-解读《坛经》（全87讲，文稿屏录版） by王德峰】 https://www.bilibili.com/video/BV1964y127dD/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 - 【王德峰 再谈禅宗【字幕】2021年】 https://www.bilibili.com/video/BV1qF411v7MQ/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+
+
+
+- 【讲座】中国古代命理学 （王德峰 11讲）】 https://www.bilibili.com/video/BV1eh411h7xH/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 - 【王德峰】复旦大学 王德峰-谈资本论【全3集】[高清版]】 https://www.bilibili.com/video/BV1Rv411G756/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 - 【复旦大学】艺术哲学与审美问题（全66讲）王德峰】 https://www.bilibili.com/video/BV1m44y1r75K/?p=12&share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+- 【王德峰教授：命运与修行（全）】 https://www.bilibili.com/video/BV1HZ4y1d7H6/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
 ##### 中国哲学
 
@@ -45,6 +52,16 @@
 - 【曾仕强:人际关系学(全8集)】 https://www.bilibili.com/video/BV1h44y1k7Se/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 - 【曾仕强_【大道易行】视频讲座完整版 9集全】 https://www.bilibili.com/video/BV1Re411w7DP/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 - 【曾仕强教授演讲高能时刻合集】 https://www.bilibili.com/video/BV1Lt411W75Q/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+
+##### 欧丽娟
+
+- 【强烈推荐】欧丽娟老师的《红楼梦》讲说（全198讲）|不仅仅是红楼梦，更是对人生的思考】 https://www.bilibili.com/video/BV1hp4y1t7zq/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+- 【中国文学史】欧丽娟老师 #35集.完】 https://www.bilibili.com/video/BV1oU4y1a7dc/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+
+#### 科技
+
+- 【青春万岁】稚晖君：把头扎进沙漠，发现沙子下是星辰大海】 https://www.bilibili.com/video/BV1hm4y117xq/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+- 【稚晖君：“过于先进的科技对普通人来说像魔法一样，我觉得很酷”】 https://www.bilibili.com/video/BV1zm4y197Py/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
 #### 心理学
 
@@ -71,7 +88,7 @@
 
 ##### 简爱
 
-- 【“我得到了一份糟糕的世界，但我知道这不是我的全世界”，爱情，不是《简·爱》最重要的主题|《简·爱》01【杜素娟】】 https://www.bilibili.com/video/BV15M4y1j73v/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+- 【“我得到了一份糟糕的世界，但我知道这不是我的全世界”，爱情，不是《简·爱》最重要的主题|《简·爱》01【杜素娟】 https://www.bilibili.com/video/BV15M4y1j73v/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
 
 
@@ -104,178 +121,6 @@ Badm1ntonInsight：https://space.bilibili.com/3461575237175957/channel/series
 其他：
 
 - 【绝处逢生的秘密，正手后场被动步伐详解！】 https://www.bilibili.com/video/BV1Ar421x729/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+- 【李诗沣】瓜队系列视频—国羽小课堂之接杀球步法】 https://www.bilibili.com/video/BV17h4y1E79j/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 分层次行为
-
-- （正常层次）阅读，听音乐（轻音乐优先）
-- 看视频（有益），下象棋
-- 玩游戏
-
-### 注意力转移的方法参考
-
-==注意== 此处推荐的方法[使用需谨慎]()
-
-#### 阅读
-
-推荐的题材：
-
-- 历史
-
-#### 看视频
-
-
-
-- 【“当年明月的这段采访语录堪称一绝……”】 https://www.bilibili.com/video/BV1Kh4y1K7pt/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
-
-
-
-猫咪：
-
-- [亮亮也是酿酿](https://space.bilibili.com/2678945)
-
-- [圆圆的智子](https://space.bilibili.com/538142100)
-
-- [香香软软的小泡芙](https://space.bilibili.com/298946431/)
-
-- [和猫住](https://space.bilibili.com/26321770?spm_id_from=333.337.0.0)
-
-
-
-老霉：
-
-- [长腿艺术家](https://space.bilibili.com/67922665)
-
-
-
-知识：
-
-- 【毕导】这可能是世界上唯一科普这种皱纹的视频……？】 https://www.bilibili.com/video/BV1Fj411H7Xi/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
-
-
-
-- [稚晖君](https://space.bilibili.com/20259914?spm_id_from=333.999.0.0)
-- [TED精选演讲](https://space.bilibili.com/405054588?spm_id_from=333.337.0.0)
-
-
-
-运动：
-
-
-
-### 脑力劳动者的疲劳应对策略
-
-核心思想：变换活动内容
-
-- 由脑力劳动转为体力劳动
-- 在脑力劳动内部转换
-
-### 强化动机与身份认同
-
-动机来源：
-
-- 成为一个优秀的人（精神品质 + 能力技能）
-- 优越的物质条件
-
-思路：
-
-- 如何激励自己，强化动机？
-
-具体途径：
-
-- 稚晖君的视频（优秀的人和优越物质条件的案例，激励作用）
-- 学习类视频（技能提升）
-- 羽毛球教学视频（综合能力）
-
-### 链状行为转换模型
-
-$$
-A \\ 
-\downarrow \\
-B \\
-\downarrow \\
-C \\
-\downarrow \\
-D \\
-\downarrow \\
-E
-$$
-
-- A行为是需要戒除的目标行为。
-- E行为是可以接受的行为。
-- 以$A \rightarrow B$为例，A、B行为存在一定的关系（如B是A的一部分，A、B存在相似之处等），且B行为的可接受程度更高，危害性更小。依次类推可得到一条链状结构，最终得到的行为E是可接受的正常行为。
-- 考虑到习惯培养的循序渐进，相邻行为的相似度宜保持在较高水平。
-- 关键在于选择合适的下一结点的行为。
-- ==注== 将箭头方向调转可得到微行为模型。
-
-### 压力
-
-我们感受到的精神压力 = 外界施加的压力 + 主观上施加的压力
-
-外界压力：变化波动大，且难以控制
-
-主观施加压力：源于对自我的要求，通常相对稳定
-
-精神压力的波动很大程度上源于外界压力的变化
-
-
-
-- 精神压力水平可以间接决定状态水平：通常为正相关关系，越大的精神压力需要越高的状态水平来满足
-- 状态水平往往会自发地根据精神压力进行调节，以满足对于工作表现的要求
-- 当精神压力发生巨大变化时（大幅上升/下降），状态水平会自发进行大幅的调节，并且在这种调节的初期往往会出现较大的[状态波动]()（类似控制系统的阶跃响应），之后状态水平在调节过程中慢慢趋于稳定。实际的状态变化也与这种理论上的描述相符，当状态发生波动一段时间后，往往会自发稳定下来。
-
-- 结论：状态波动的产生与精神压力发生较大变化有关，而精神压力的变化很大程度上源于外界压力的变化。换而言之，状态波动出现的主要原因之一是外界压力发生了较大变化。外界环境的影响是非常重要的原因。
-
-
-
-应对思路：消除外界环境变化带来的影响，采取某种方式使得精神压力可以保持在一个相对稳定的范围内。由于精神压力由外界压力和主观施加的压力组成，而外界压力经常会发生变化而且难以控制，因此可以从自我施加的压力入手，当外界压力发生变化时，对主观施加的压力进行相应的调整，使得总体感受到的精神压力可以保持相对稳定。这要求我们能够对自己感受到的压力（外界压力，主观施加的压力等）有敏锐的感知和评估能力。
