@@ -1,5 +1,4 @@
-# notes
-some basic notes about mathematics, circuit theory, control theory, etc.
+关于数学、控制和其他一些技术的笔记。
 
 
 # 数学基础
@@ -9,3 +8,13 @@ some basic notes about mathematics, circuit theory, control theory, etc.
 - 复变函数
 - 泛函分析
 
+# 控制理论
+- 经典控制论
+- 现代控制理论
+
+# 电路理论
+- 模拟电路
+- 数字电路
+
+# 计算机相关
+- 微机与嵌入式
