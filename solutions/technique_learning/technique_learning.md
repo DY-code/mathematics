@@ -1,8 +1,15 @@
+ideas:
+
 - ROS
+- 使用树莓派搭建个人网站
 
 学习网站
 
 - [程序员鱼皮](https://space.bilibili.com/12890453)
+
+### 学习路线参考
+
+- 【|AI学习路线分享|做完这些，你已经成为机器学习方面的专家】 https://www.bilibili.com/video/BV16341177c1/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
 ### tools
 
@@ -10,7 +17,7 @@
 
 官网：https://www.marktext.cc/
 
-github：https://github.com/marktext/marktext?tab=readme-ov-file
+github：https://github.com/marktext/marktext?tab=readme-ov-fil
 
 ### github
 
@@ -20,9 +27,44 @@ github：https://github.com/marktext/marktext?tab=readme-ov-file
 
 a temporary token: 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
 
+###### github下载指定路径的文件
 
+- [Github | 如何在Github上只下载一个文件或文件夹！？](https://blog.csdn.net/m0_72224305/article/details/127567759)
+
+###### 使用git提交
+
+简要步骤：
+
+1. 获取已有的github仓库地址`[github_repository_url]`
+2. 将仓库克隆到本地：
+
+```
+git clone [github_repository_url]
+```
+
+3. 在本地修改仓库后，执行`git add .`，将改动添加到本地仓库（用来准备下一次提交）
+4. 将改动提交到本地仓库：
+
+```
+git commit -m "your_comment"
+```
+
+5. 将本地改动提交到github：
+
+```
+    git push origin [your_branch]
+```
+
+若提交到主分支，则执行：
+
+```
+git push origin main
+```
+
+参考：
 
 - [提交文件到github的两种方法](https://blog.csdn.net/u013553529/article/details/59144904#:~:text=方法一：本地目录执行 git init，不执行 git clone 1 执行 git,） 3 执行 git push origin main 将本地工程提交到github)
+- `git-add`：https://git-scm.com/docs/git-add
 
 ###### github加速：fast github
 
@@ -38,7 +80,23 @@ a temporary token: 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
 - [Linux官网](https://www.linux.org/)
 
 - [Linux内核的官方网址](https://www.kernel.org/)
+
 - [arm体系结构的源码网站](https://www.arm.linux.org.uk/developer/)
+
+#### Linux命令
+
+压缩和解压缩指定文件夹：
+
+```
+zip zipfile.zip ./path
+unzip -o -d ./path myfile.zip
+```
+
+删除文件夹下的所有文件（夹）：
+
+```
+rm -rf *
+```
 
 #### 学习资料
 
@@ -54,13 +112,17 @@ a temporary token: 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
 
 - [Markdown输入公式、符号等语法汇总](https://blog.csdn.net/weixin_46098577/article/details/118308281?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164698148016780261973453%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=164698148016780261973453&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-11-118308281.pc_search_result_cache&utm_term=%E4%B8%8D%E7%AD%89%E4%BA%8E%E2%89%A0%E6%80%8E%E4%B9%88%E6%89%93&spm=1018.2226.3001.4187)
 
-
-
 - 数学公式块中加粗字母，且不改变字体，示例：
 
 $$
 \pmb{x}
 $$
+
+###### 一些非常见用法
+
+- 在正下方插入下标，示例：$\underset{x}{\min}$
+
+- 其他特殊符号：$\mathbb{I}$
 
 # LaTeX
 
@@ -74,6 +136,75 @@ overleaf LaTeX教程：https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_mi
 
 - 黄新刚LaTeX笔记：https://github.com/huangxg/lnotes
 
+#### 页眉页脚设置
+
+```latex
+% 设置当前和随后的页面样式
+\pagestyle{<style>}
+% 仅设置当前页面的样式
+\thispagestyle{<style>}
+```
+
+预定义的页面样式<style>：
+
+- `empty`: no headers or footers on pages
+- `plain`: no page headers, footers consist of a centered page number
+- `headings`: no footers, headers contains class-specific information and page number
+- `myheadings`: no footers, headers contains page number and user-supplied information
+
+##### `fancyhdr` package
+
+设置页眉和页脚：
+
+```latex
+\fancyhead[locations]{content}
+\fancyfoot[locations]{content}
+\fancyhf[locations]{content}
+```
+
+*locations*指定了*content*显示的位置，其位置定义以及示意图如下：
+
+- `O(Odd) / E(Even)`：奇/偶数页（右/左页）
+- `H(Header) / F(Footer)`：页眉/页脚
+- `L(Left) / C(Center) / R(Right)`：左/中/右区域
+
+![image-20240415170501537](images/image-20240415170501537.png)
+
+使用示例：
+
+```latex
+\fancyhead{} % 清除页眉设置
+\fancyhead[RO,LE]{this is header content} % 在 右页右边 和 左页左边 区域显示
+```
+
+#### counter的用法
+
+在LaTeX中，counter相当于编程语言中的整型变量，可以用于对section等的计数
+
+参考：https://www.overleaf.com/learn/latex/Counters
+
+#### LaTeX的一些基础命令
+
+##### 分页命令
+
+```latex
+\clearpage
+\cleardoublepage
+```
+
+上述命令用于结束当前页并打印所有待显示的图片和表格。对于双面打印的文档，`\cleardoublepage`会将接下来的一页作为右边的页面（也就是奇数页码的页面，这意味着可能需要插入空白页）。
+
+参考：
+
+- https://latex2e.org/_005cclearpage-_0026-_005ccleardoublepage.html
+- https://latex2e.org/Floats.html
+
+##### 自定义命令
+
+- `\newcommand`：定义新命令
+- `\renewcommand`：重定义已有命令
+- `\providecommand`：当命令不存在时，定义新命令；当命令已存在时，重新定义命令
+
 #### 制作模板
 
 overleaf 提供的教程：
@@ -83,15 +214,13 @@ overleaf 提供的教程：
 
 overleaf 模板：https://cn.overleaf.com/latex/templates
 
-
-
 参考资料：
 
 - [如何写一个LaTeX类文件，并设计你自己的简历 ](https://www.cnblogs.com/super-zhang-828/p/7450133.html)
 
 - [Can I write cls files in LaTeX instead of TeX?](https://stackoverflow.com/questions/3702222/can-i-write-cls-files-in-latex-instead-of-tex)
 
--  [LaTeX2e for class and package writers guide](http://www.latex-project.org/guides/clsguide.pdf)
+- [LaTeX2e for class and package writers guide](http://www.latex-project.org/guides/clsguide.pdf)
 
 #### 字体设置
 
@@ -99,10 +228,56 @@ overleaf 模板：https://cn.overleaf.com/latex/templates
 
 - [Latex字体大小](https://blog.csdn.net/yhcwjh/article/details/116516011)
 
-#### 表格
+#### 图片和表格
 
 - latex 表格单元格内分行的实现 - 大师姐的文章 - 知乎
   https://zhuanlan.zhihu.com/p/409241007
+
+- 去掉图片和表格的标题中的冒号，并用空格代替：
+
+```latex
+% 去掉标题中的冒号 用空格代替
+\usepackage{caption}
+% 下面两行代码将冒号用空格代替，但是实测中空格没有添加成功
+% \captionsetup[table]{labelsep=space} % 表
+% \captionsetup[figure]{labelsep=space} % 图
+% 采用自定义格式的方式进行修改
+\DeclareCaptionLabelFormat{mylabel}{#1#2\hspace{1.5ex}}
+\captionsetup[figure]{labelformat=mylabel,labelsep=none}
+\captionsetup[table]{labelformat=mylabel,labelsep=none}
+```
+
+参考：[How to change spacing between caption numbering and text?](https://tex.stackexchange.com/questions/192449/how-to-change-spacing-between-caption-numbering-and-text)
+
+#### 目录
+
+使用tocloft宏包设置目录格式：
+
+在目录中section和页码之间添加引导点：
+
+```
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+```
+
+其中，`\renewcommand`用于重定义命令，`\cftsecleader`用于定义section条目使用的引导线（通常定义为`\cftdotfill{\cft某dotsep}`），`\cftdotfill`命令用于绘制引导线，`\cftdotsep`命令指定了引导点之间的距离为默认距离。
+
+有时为避免报错，可以在导入tocloft宏包时添加`subfigure`选项，即：
+
+```
+\usepackage[subfigure]{tocloft}
+```
+
+#### 摘要
+
+设置摘要部分的字体样式：
+
+```latex
+\renewcommand{\abstractnamefont}{\fzlishu\bfseries\large} % 标题部分
+\renewcommand{\abstracttextfont}{\fzkaiti} % 正文部分
+```
+
+参考：[Latex 摘要排版](https://blog.csdn.net/Happppppy_/article/details/106711999#:~:text=%E5%88%A9%E7%94%A8%E4%BB%A5%E4%B8%8B%E4%B8%A4%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%AE%BE%E7%BD%AE%E6%91%98%E8%A6%81%E5%AD%97%E4%BD%93%EF%BC%9A%20renewcommand%7Babstractnamefont%7D%7Bfzlishubfserieslarge%7D%20renewcommand%7Babstracttextfont%7D%7Bfzkaiti%7D,1%202%20%E9%80%9A%E8%BF%87%E5%A6%82%E4%B8%8B%E5%91%BD%E4%BB%A4%E8%AE%BE%E7%BD%AE%E6%91%98%E8%A6%81%E6%A0%87%E9%A2%98%E4%B8%8E%E6%91%98%E8%A6%81%E5%86%85%E5%AE%B9%E7%9A%84%E9%97%B4%E8%B7%9D%EF%BC%9A%20setlength%7Babstitleskip%7D%7B-2em%7D)
 
 ### BibTex与文献数据库
 
@@ -149,7 +324,7 @@ overleaf 模板：https://cn.overleaf.com/latex/templates
 % test.tex
 \documentclass{article}
 % 中文支持
-\usepackage[UTF8]{ctex}	
+\usepackage[UTF8]{ctex}    
 
 \begin{document}
 引用了wangyi2018 \cite{name2}
@@ -200,6 +375,12 @@ issn = {1007-2276},
 
 - [listings – Typeset source code listings using LATEX](https://ctan.org/pkg/listings#:~:text=To%20use%2C%20usepackage%20%7Blistings%7D%2C%20identify%20the%20language%20of,in%20the%20form%20appropriate%20for%20the%20current%20language.)
 
+## 论文写作格式基础
+
+### 摘要
+
+中英文摘要应当基本对应，且通常需要放在独立的页面中
+
 # python
 
 #### pip
@@ -217,8 +398,6 @@ pip show scipy
 - [conda常用命令汇总](https://blog.csdn.net/raelum/article/details/125109819?ops_request_misc=%7B%22request%5Fid%22%3A%22169638859316800180635510%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=169638859316800180635510&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-125109819-null-null.142%5Ev94%5Einsert_down28v1&utm_term=Conda%E6%8C%87%E4%BB%A4&spm=1018.2226.3001.4187)
 
 conda重命名虚拟环境时，需要复制原有环境并重命名，参考：[anaconda 重命名 虚拟环境、删除环境、复制环境](https://blog.csdn.net/chenran187906/article/details/106900396)
-
-
 
 - 安装jupyter notebook
 
@@ -255,8 +434,6 @@ jupyter notebook
 
 文档：https://pandas.pydata.org/pandas-docs/stable/reference/frame.html
 
-
-
 - dataframe的数据类型转换
 
 ```python
@@ -270,8 +447,6 @@ df = df.astype('float32')
 - [API Reference](https://matplotlib.org/stable/api/index.html)
 
 - `matplotlib.pyplot`: https://matplotlib.org/stable/api/pyplot_summary.html
-
-
 
 - 在x=0, y=0处画线形成十字
 
@@ -305,13 +480,9 @@ plt.axis("equal")
 
 - [NumPy reference](https://numpy.org/doc/stable/reference/index.html)（速度较慢）
 
-
-
 ```python
 np.multiply() # 各元素分别相乘
 ```
-
-
 
 ###### numpy计算矩阵的逆
 
@@ -385,6 +556,15 @@ $$
 
 参考：https://www.geeksforgeeks.org/python-os-path-join-method/
 
+- 查看指定文件夹下的所有路径以及文件数量
+
+```python
+import os
+for dirname, _, filenames in os.walk('./datasets/mnist'):
+     print(dirname) # 路径名
+     print(len(filenames)) # 路径下的文件数量
+```
+
 ## 语法
 
 ### 魔法函数
@@ -412,8 +592,6 @@ https://www.zhihu.com/question/49136398/answer/1654722335
 
 参考：https://www.runoob.com/python/python-object.html
 
-
-
 ##### python类的一些内置函数
 
 ###### 类对象的调用：`__call__`
@@ -424,7 +602,7 @@ https://www.zhihu.com/question/49136398/answer/1654722335
 class Person:
     def __call__(self, name):
         print("__call__: " + name)
-        
+
 person = Person()
 person("Fred")
 # 输出结果：__call__: Fred
@@ -432,7 +610,7 @@ person("Fred")
 
 ###### 索引符号重载
 
-```python 
+```python
 object[key] <==> object.__getitem__(key)
 ```
 
@@ -460,8 +638,6 @@ assert(0) # 参数为0时触发断言
 2. [【目录】【中文】【deplearning.ai】【吴恩达课后作业目录】](https://blog.csdn.net/u013733326/article/details/79827273)
 3. [Deeplearning.ai深度学习教程中文笔记](https://github.com/fengdu78/deeplearning_ai_books)
 
-
-
 李沐：
 
 - [【完结】动手学深度学习 PyTorch版](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)
@@ -471,24 +647,24 @@ assert(0) # 参数为0时触发断言
 源代码：
 
 - 中文版：https://github.com/d2l-ai/d2l-zh?tab=readme-ov-file
+
 - 英文版：https://github.com/d2l-ai/d2l-en
 
+- 【PyTorch深度学习快速入门教程（绝对通俗易懂！）【小土堆】 https://www.bilibili.com/video/BV1hE411t7RN/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
+机器学习：
 
-- 【PyTorch深度学习快速入门教程（绝对通俗易懂！）【小土堆】】 https://www.bilibili.com/video/BV1hE411t7RN/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+- [机器学习公式注解（南瓜书）](https://github.com/datawhalechina/pumpkin-book?tab=readme-ov-file)
 
 ### colab
 
 - https://colab.research.google.com/
-
 
 ## pytorch
 
 官网：https://pytorch.org/get-started/locally/
 
 PyTorch官方文档：https://pytorch.org/docs/stable/index.html
-
- 
 
 - 【最详细的 Windows 下 PyTorch 入门深度学习环境安装与配置 CPU GPU 版 | 土堆教程】 https://www.bilibili.com/video/BV1S5411X7FY/?p=22&share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 - 【PyTorch深度学习快速入门教程（绝对通俗易懂！）【小土堆】】 https://www.bilibili.com/video/BV1hE411t7RN/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
@@ -553,6 +729,7 @@ input[channel] = (input[channel] - mean[channel]) / std[channel]
 - `Resize()`
 
 - `Compose()`：把多个transforms步骤整合到一起
+
 - `RandomCrop()`：随机裁剪
 
 #### TensorBoard 数据可视化工具
@@ -674,14 +851,12 @@ $$
 
 - loss function: $\mathscr{l}(\hat{y},\ y)$，衡量模型在单个训练样本上的表现
 
-
 损失函数的设计：避免函数出现多个局部最优值，应使得损失函数为一个凸函数
 
 此处采用的损失函数（交叉熵损失函数）：
 $$
 \mathscr{l}(\hat{y},\ y) = -(y\ln\hat{y} + (1-y)\ln(1 - \hat{y}))
 $$
-
 
 - cost function（成本函数）：衡量模型在全体训练样本上的表现
 
@@ -758,7 +933,6 @@ $$
 &= a - y
 \end{aligned}
 $$
-
 
 $$
 z = w^Tx + b \\
@@ -852,6 +1026,7 @@ $$
 <img src="images/image-20240302101541463.png" alt="image-20240302101541463" style="zoom:50%;" />
 
 - $a^{[l]}_{i}$：activation，表示网络中第$l$层第$i$个神经元的值，且$a^{[0]} = X$
+
 - $a^{[l](i)}$：第$i$个训练样本下第$l$层的值
 
 - $n^{[l]}$：第$l$层的节点数，$n^{[0]} = n_x,\ n^{[1]} = 4,\ n^{[2]} = 1$
@@ -869,8 +1044,6 @@ A^{[l]} &:\ (n^{[l]},\ m)
 \end{aligned}
 $$
 
-
-
 针对第$i$个样本的前向传播过程：
 $$
 \begin{aligned}
@@ -884,8 +1057,6 @@ $$
 - $x = [x_1,\ x_2,\ x_3]^T$
 
 - $W^{[1]}_{4 \times 3}$：4个隐含层单元，样本含3个特征
-
-
 
 前向传播过程-针对样本集的向量化：
 $$
@@ -915,13 +1086,11 @@ $$
   \end{aligned}
   $$
 
-
 $$
 \begin{aligned}
 dZ^{[2]} &= [dz^{[2](1)},\ dz^{[2](2)},\ ...,\ dz^{[2](m)}]
 \end{aligned}
 $$
-
 
 - $Y = [y^{(1)},\ y^{(2)},\ ...,\ y^{(m)}]_{1 \times m}$
 - 第2层输出层只有1个节点，采用sigmoid函数，参考logistic regression部分，有：
@@ -930,8 +1099,6 @@ $$
 \frac{\partial \mathscr{l}}{\partial z} = a - y \\
 dz = \frac{\partial J}{\partial z} = \frac{1}{m}\sum_{i=1}^m\frac{\partial \mathscr{l}^{(i)}}{\partial z} = \frac{1}{m}\sum_{i=1}^m(a^{(i)} - y^{(i)})
 $$
-
-
 
 ![image-20240302120903407](images/image-20240302120903407.png)
 
@@ -973,7 +1140,6 @@ $$
 $$
 dZ^{[2]} = A^{[2]} - Y
 $$
-
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -1131,7 +1297,7 @@ $$
 
 ### transformer
 
-# 图像处理
+# 图像处理与计算机视觉
 
 计算机视觉领域可使用的数据集：COCO
 
@@ -1145,8 +1311,6 @@ dlib的github官网：https://github.com/davisking/dlib
 
 - [ubuntu20.04安装Dlib方法](https://zhuanlan.zhihu.com/p/449942621)
 
-
-
 - [[已解决]face_recognition库安装，dlib库安装](https://blog.csdn.net/weixin_53236070/article/details/124306424)
 
 ## opencv
@@ -1159,6 +1323,10 @@ dlib的github官网：https://github.com/davisking/dlib
 
 - 摄像头参数详解：[Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html) 
 
+教程：
+
+- 【3h精通Opencv-Python】 https://www.bilibili.com/video/BV16K411W7x9/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
+
 #### 安装opencv-python
 
 - 使用镜像文件安装opencv-python: https://blog.csdn.net/weixin_44756050/article/details/104825269
@@ -1170,15 +1338,11 @@ dlib的github官网：https://github.com/davisking/dlib
 pip install opencv_python-4.5.4.60-cp39-cp39-win_amd64.whl
 ```
 
-
-
 ## yolo
 
 作者的yolo网页：https://pjreddie.com/darknet/yolov1/
 
 - [YOLO系列算法精讲：从yolov1至yolov8的进阶之路（2万字超全整理）](https://blog.csdn.net/wjinjie/article/details/107509243?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170901435516800211595559%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170901435516800211595559&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-107509243-null-null.142^v99^pc_search_result_base7&utm_term=yolo&spm=1018.2226.3001.4187)
-
-
 
 - 【百万播放】零基础、快速学YOLO目标检测算法！完整学习路线一条龙，无脑通关！【YOLOv5|YOLO算法|目标检测算法】】 https://www.bilibili.com/video/BV1XW4y1a7f4/?p=14&share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
@@ -1186,7 +1350,7 @@ pip install opencv_python-4.5.4.60-cp39-cp39-win_amd64.whl
 
 - 【精读AI论文】YOLO V1目标检测，看我就够了】 https://www.bilibili.com/video/BV15w411Z7LG/?share_source=copy_web&vd_source=c6317e87993cd23a0e65d74c89d6599d
 
-### yolov5 
+### yolov5
 
 yolov5 github: https://github.com/ultralytics/yolov5?tab=readme-ov-file
 
@@ -1194,44 +1358,24 @@ yolov5 github: https://github.com/ultralytics/yolov5?tab=readme-ov-file
 
 yolov7 github: https://github.com/WongKinYiu/yolov7
 
-# control & 气垫船 
+## 数字图像处理
 
+###### edge detection 边缘检测
 
+在进行边缘检测之前往往需要对图像进行平滑和去噪，此外还有阈值处理等
 
+- Sobel operators/kernels（B719）
 
+<img src="images/image-20240414152342165.png" alt="image-20240414152342165" style="zoom:50%;" />
 
+Sobel kernels拥有更好的图像平滑和噪声抑制的特性
 
+# control theory
 
+![Control_Map_ver5](images/Control_Map_ver5.png)
 
+interesting theory: 
 
+- kalman filter
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+# 机器人
